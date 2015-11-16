@@ -26,3 +26,7 @@ param_1='abc'
 param_2='acbe'
 make_time = {'productId'=>1, 'makeTime'=>2}
 @mock_response.set_response("/path/calling/api/#{param_1}/products/#{param_2}",make_time.to_json)
+
+
+# Mirage.stop :all
+# Mirage::Client.new.templates.delete_all
