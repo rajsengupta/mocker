@@ -47,5 +47,6 @@ p response1.body
 response2 = @mock_response.service(URI.parse( "http://localhost:7001/responses#{path}"),Net::HTTP::Get)
 p response2.body
 
+#if you want to see whats set in the mock disable the below two lines and check at http://localhost:7001
 Mirage::Client.new.templates.delete_all
 Mirage.stop :all
